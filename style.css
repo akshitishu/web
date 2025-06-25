@@ -209,7 +209,7 @@ form{
     }
 }
 @media (max-width: 950px){
-    .hero {
+    .hero 
         height: 100px;
     }
 }
