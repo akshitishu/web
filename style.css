@@ -209,6 +209,11 @@ form{
     }
 }
 @media (max-width: 950px){
+    .hero {
+        height: 400px;
+    }
+}
+@media (max-width: 950px){
     .service-cards {
         grid-template-columns: repeat(3, 1fr);
     }
