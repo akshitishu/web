@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding :0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+marquee{
+    font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: italic;
+   border-bottom: 2px solid #000;
+}
+
+header{
+    box-shadow: 0 6px 6px rgba(0 ,0, 0, 0.1);
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:8px 16px;
+    align-items: center;
+}
+.logo{
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+.logo:hover{
+    background-color: #ddd;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+  
+}
+.nav-menu li a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+}
+    
+.nav-menu li a:hover{
+    background-color: #ddd;
+}
+main{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.hero{
+    position: relative;
+}
+
+
+.hero img{
+    width: 100%;
+    height: 600px;
+}
+.hero-content{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #f28d08;
+    font-size: 50px;
+    background-color:rgba(255,255,255,0.1);
+    text-wrap:nowrap;
+}
+.services{
+   
+}
+.services h2{
+    padding: 20px 0;
+    border-bottom:1px solid #ddd;
+    font-weight: 500;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+.cards{
+    background-color: #ddd;
+    border:1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0 ,0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in;
+
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
+.About{
+   margin-top: 20px;
+   border-bottom:2px solid #ddd;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20PX;
+    padding: 20px 0;
+    border-bottom:1px solid #ddd;
+    font-weight: 500;
+}
+.About h3{
+    padding: 20px 0;
+    border-bottom:1px solid #ddd;
+    font-weight: 500;
+}
+.About p{
+    font-size: 18px;
+    margin: 30px 0;
+}
+.about-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:auto;
+    filter: grayscale(100%);
+    gap:16px;
+
+}
+.about-img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+.about-card h3{
+    font-size: 20px;
+    margin:10px 0;
+    font-weight: 500; 
+}
+.about-card p:first-of-type {
+    font-size: 16px;
+    font-style: oblique;
+    margin: 10px 0;
+    opacity: 1.6;
+}
+.about-card button{
+    background-color: #eee;
+    width: 100%;
+    padding:8px 16px;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+
+}
+.about-card button:hover{
+    background-color: #626565;
+}
+.contact{
+    background-color: #f4f4f4;
+    padding: 40px 0;
+   margin-top: 30px;
+}
+.contact h2{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.input,textarea{
+    padding: 12px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.btn {
+    border: none;
+    background-color: #000;
+    color: aliceblue;
+    padding: 12px 20px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.5 ease,color 0.5 ease;
+    
+}
+.btn:hover{
+    background-color: #5d5656af;
+    color: #000;
+    cursor: pointer;
+}
+.footer{
+    background-color: #000000d4;
+    color: #eee;
+    padding: 20px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+}
+.footer-section{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    grid-template-columns: auto;
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width: 950px){
+    .about-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:500px){
+    .about-grid{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+}
