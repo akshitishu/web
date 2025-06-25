@@ -224,7 +224,7 @@ form{
     font-size: 30px;
 }
 }
-@media(max-width: 470px ){
+@media(max-width: 560px ){
     .hero-content{
     font-size: 10px;
 }
