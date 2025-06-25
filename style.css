@@ -208,6 +208,11 @@ form{
         grid-template-columns: repeat(3, 1fr);
     }
 }
+@media (max-width: 950px){
+    .service-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media(max-width: 795px ){
     .hero-content{
@@ -221,6 +226,11 @@ form{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media (max-width: 700px){
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media(max-width: 560px ){
     .hero-content{
     font-size: 20px;
@@ -231,4 +241,8 @@ form{
         grid-template-columns:repeat(1,1fr) ;
     }
 }
-@media (max-width:)
+@media (max-width:500px){
+    .service-cards{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+}
