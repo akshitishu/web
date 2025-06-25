@@ -209,23 +209,25 @@ form{
     }
 }
 
-@media (max-width: 700px){
-    .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width:500px){
-    .about-grid{
-        grid-template-columns:repeat(1,1fr) ;
-    }
-}
 @media(max-width: 795px ){
     .hero-content{
     font-size: 30px;
 }
 }
+
+
+@media (max-width: 700px){
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media(max-width: 560px ){
     .hero-content{
     font-size: 10px;
 }
+}
+@media (max-width:500px){
+    .about-grid{
+        grid-template-columns:repeat(1,1fr) ;
+    }
 }
