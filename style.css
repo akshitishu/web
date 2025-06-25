@@ -224,3 +224,8 @@ form{
     font-size: 30px;
 }
 }
+@media(max-width: 470px ){
+    .hero-content{
+    font-size: 30px;
+}
+}
