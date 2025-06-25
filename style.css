@@ -210,7 +210,7 @@ form{
 }
 @media (max-width: 950px){
     .hero {
-        height: 400px;
+        height: 100px;
     }
 }
 @media (max-width: 950px){
